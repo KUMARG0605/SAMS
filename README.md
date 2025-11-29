@@ -1,4 +1,4 @@
-# 📚 Student Attendance Management System (SAMS)
+# 📚 Student Attendance Management System 
 
 A web-based attendance management system built with Flask and SQL Server for managing student and faculty attendance at **Rajiv Gandhi University of Knowledge Technologies (RGUKT), Andhra Pradesh**.
 
@@ -39,36 +39,6 @@ A web-based attendance management system built with Flask and SQL Server for man
 | Charts | Plotly, Matplotlib, Seaborn |
 | Authentication | Werkzeug Security |
 
-## 📁 Project Structure
-
-```
-SAMS/
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── setup_db.py           # Database setup script
-├── fix_database.py       # Database migration script
-├── static/
-│   ├── home.css          # Main stylesheet
-│   ├── Login.js          # Login page scripts
-│   ├── Registration.js   # Registration validation
-│   ├── toogleon_subjects.js  # Subject toggle logic
-│   ├── images/           # Static images
-│   └── uploads/          # User uploads
-└── templates/
-    ├── home.html         # Landing page
-    ├── login.html        # Student login
-    ├── registration_form.html    # Student registration
-    ├── student_dashbard.html     # Student dashboard
-    ├── student_profile.html      # Student profile
-    ├── faculty_login.html        # Faculty login
-    ├── faculty_registration_form.html  # Faculty registration
-    ├── Attendance_Admin_portal.html    # Faculty attendance portal
-    ├── forgot_password.html      # Password recovery
-    ├── reset_password.html       # Password reset
-    ├── About_us.html     # About page
-    └── Contact_us.html   # Contact page
-```
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -84,35 +54,18 @@ SAMS/
    cd SAMS
    ```
 
-2. **Create a virtual environment** (optional but recommended)
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   source venv/bin/activate  # Linux/Mac
-   ```
-
 3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Configure Database Connection**
-   
-   Edit `app.py` and update the connection string:
-   ```python
-   conn = pyodbc.connect(
-       'DRIVER={SQL Server};'
-       'SERVER=YOUR_SERVER_NAME\\SQLEXPRESS;'
-       'DATABASE=SAMS;'
-       'Trusted_Connection=yes;'
-   )
-   ```
+      Edit `app.py` and update the connection strings
 
 5. **Setup Database**
    ```bash
    python setup_db.py
    ```
-
 6. **Run the application**
    ```bash
    python app.py
@@ -122,19 +75,6 @@ SAMS/
    ```
    http://127.0.0.1:5000
    ```
-
-## 📊 Database Schema
-
-### Tables
-
-| Table | Description |
-|-------|-------------|
-| `registration` | Student registration data |
-| `faculty_data` | Faculty registration data |
-| `subjects` | Student-subject mapping |
-| `faculty_subjects` | Faculty-subject mapping |
-| `images` | Profile images storage |
-| `[subject_name]` | Dynamic tables for each subject's attendance |
 
 ## 🎯 Usage
 
@@ -149,27 +89,9 @@ SAMS/
 2. Select the subjects you teach
 3. Login to access the attendance portal
 4. Mark attendance by selecting subject, date, and absent students
-
-## 📸 Screenshots
-
-### Home Page
-The landing page with navigation to student and faculty portals.
-
-### Student Dashboard
-Interactive pie charts showing attendance percentage for each subject.
-
-### Faculty Portal
-Easy-to-use interface for marking student attendance.
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
@@ -183,14 +105,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Rajiv Gandhi University of Knowledge Technologies (RGUKT-AP)
-- Flask Documentation
-- Bootstrap Team
 - Plotly for interactive charts
 
 ## 📞 Contact
 
 For any queries or support:
-- 📧 Email: indexlearners03@gmail.com
+- 📧 Email: kumar03.rkvalley@gmail.com
 - 📱 Phone: +91 9392513416
 
 ---
